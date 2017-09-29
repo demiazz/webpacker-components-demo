@@ -2,7 +2,8 @@
   "name": "chat",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.0.1"
+    "@rails/webpacker": "^3.0.1",
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.8.2"
