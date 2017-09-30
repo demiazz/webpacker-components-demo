@@ -1,3 +1,5 @@
 <div class="messages">
-
+  <% messages.each do |message| %>
+    <%= c("message", message: message) %>
+  <% end %>
 </div>
