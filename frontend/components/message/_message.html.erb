@@ -1,19 +1,15 @@
+<% p = k("components/message", message) %>
+
 <div class="message">
   <div class="message--header">
     <span class="message--author">
-      <%= message.author %>
+      <%= p.author %>
     </span>
     <span class="message--time">
-      <% if message.created_at > Time.now - 24.hours %>
-        <%= l(message.created_at, format: :today) %>
-      <% else %>
-        <%= l(message.created_at, format: :older) %>
-      <% end %>
+      <%= p.posted_at %>
     </span>
   </div>
   <div class="message--text">
-    <% message.text.lines.each do |line| %>
-      <p><%= line %></p>
-    <% end %>
+    <%= p.text %>
   </div>
 </div>
