@@ -1,4 +1,4 @@
-import sendMessage from "client/chat";
+import { sendMessage } from "client/chat";
 
 import component from "utils/component";
 
