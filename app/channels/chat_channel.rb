@@ -4,4 +4,8 @@ class ChatChannel < ApplicationCable::Channel
 
     super
   end
+
+  def send_message(payload)
+    Message.create(author: current_user, text: payload["message"])
+  end
 end
