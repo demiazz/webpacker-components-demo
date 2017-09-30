@@ -1,5 +1,7 @@
 development:
-  adapter: async
+  adapter: redis
+  url: redis://localhost:6379/2
+  channel_prefix: chat_development
 
 test:
   adapter: async
