@@ -1,6 +1,6 @@
 <div class="auth">
   <%= form_tag login_path, method: :post, class: "auth--form" do %>
     <%= text_field_tag :username, "", class: "auth--form-input", placeholder: "Input your username here...", autofocus: true, required: true %>
-    <%= submit_tag "Identify me", class: "auth--form-submit" %>
+    <%= submit_tag "Identify me", class: "button button_auth" %>
   <% end %>
 </div>

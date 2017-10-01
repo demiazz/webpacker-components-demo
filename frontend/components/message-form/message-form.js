@@ -2,6 +2,7 @@ import { sendMessage } from "client/chat";
 
 import component from "utils/component";
 
+import "components/button/button";
 import "./message-form.css";
 
 component(".message-form", element => {
