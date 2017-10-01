@@ -1,0 +1,24 @@
+.input {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  outline: none;
+  transition: border-color 150ms;
+  box-sizing: border-box;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #3f94f9;
+  }
+
+  &_auth {
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+  }
+
+  &_message-form {
+    flex: 1 1 auto;
+    padding: 12px 12px;
+    resize: none;
+  }
+}
