@@ -4,4 +4,11 @@
   align-items: center;
   width: 100%;
   height: 100%;
+
+  &--icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background: svg-load("./static/icon.svg", fill=#3f94f9);
+  }
 }
