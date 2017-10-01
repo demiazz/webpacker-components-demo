@@ -6,10 +6,13 @@
   },
   "lint-staged": {
     "frontend/**/*.js": [
-      "prettier --write"
+      "prettier --write",
+      "eslint",
+      "git add"
     ],
     "frontend/**/*.css": [
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   },
   "pre-commit": [
