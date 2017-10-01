@@ -36,7 +36,7 @@ function getCableConsumer() {
 function createChannel() {
   const { subscriptions } = getCableConsumer();
 
-  return subscriptions.create.apply(subscriptions, arguments);
+  return subscriptions.create(...subscriptions);
 }
 
 export default createChannel;

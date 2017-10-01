@@ -1,6 +1,6 @@
 import createChannel from "client/cable";
 
-let listeners = [];
+const listeners = [];
 
 const chat = createChannel("ChatChannel", {
   received({ message }) {
