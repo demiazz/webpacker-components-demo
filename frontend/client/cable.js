@@ -33,10 +33,10 @@ function getCableConsumer() {
   return consumer;
 }
 
-function createChannel() {
+function createChannel(...args) {
   const { subscriptions } = getCableConsumer();
 
-  return subscriptions.create(...subscriptions);
+  return subscriptions.create(...args);
 }
 
 export default createChannel;
