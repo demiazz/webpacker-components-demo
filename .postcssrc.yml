@@ -2,3 +2,4 @@ plugins:
   postcss-smart-import: {}
   postcss-cssnext: {}
   postcss-flexbugs-fixes: {}
+  postcss-inline-svg: {}
