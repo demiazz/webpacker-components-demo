@@ -1,6 +1,20 @@
 {
   "name": "chat",
   "private": true,
+  "scripts": {
+    "lint-staged": "$(yarn bin)/lint-staged"
+  },
+  "lint-staged": {
+    "frontend/**/*.js": [
+      "prettier --write"
+    ],
+    "frontend/**/*.css": [
+      "prettier --write"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged"
+  ],
   "dependencies": {
     "@rails/webpacker": "3.0.1",
     "actioncable": "5.1.4",
