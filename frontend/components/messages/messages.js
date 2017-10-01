@@ -6,7 +6,7 @@ import "components/message/message";
 
 import "./messages.css";
 
-component(".messages", element => {
+component(".js-messages", element => {
   subscribe(message => {
     element.insertAdjacentHTML("beforeend", message);
   });

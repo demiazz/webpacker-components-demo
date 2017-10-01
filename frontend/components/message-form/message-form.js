@@ -6,9 +6,9 @@ import "components/button/button";
 import "components/input/input";
 import "./message-form.css";
 
-component(".message-form", element => {
-  const input = element.querySelector(".message-form--input");
-  const submit = element.querySelector(".message-form--submit");
+component(".js-message-form", element => {
+  const input = element.querySelector(".js-message-form--input");
+  const submit = element.querySelector(".js-message-form--submit");
 
   function queueMessage() {
     sendMessage(input.value);
